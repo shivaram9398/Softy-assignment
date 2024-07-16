@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "shiva",
+            "group": "me",
+            "database": "${workspaceFolder:BackendApp}/userinfo.db"
+        }
+    ]
+}

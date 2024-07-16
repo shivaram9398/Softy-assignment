@@ -1,0 +1,54 @@
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+    "email":"shivaram9398",
+    "username": "shiv",
+    "password":"123456789",
+    "role": "admin"
+}
+
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username":"shiv",
+    "password":"123456789"
+}
+
+###
+POST http://localhost:3000/api/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXYiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MjExNTY3NDl9.fUxu8CP_fg2Zc0Z50oDHIw0CKLcmTdoYskwRZ3CH-PI
+Content-Type: application/json
+
+{
+    "title":"bghdaghjafjshagfahgfjhfhs",
+    "description":"afbnabfmnafmnanfmfndsmfshjfadhfdsjms",
+    "inventory_count":969
+}
+
+###
+GET httP://localhost:3000/api/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXYiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MjExNTY3NDl9.fUxu8CP_fg2Zc0Z50oDHIw0CKLcmTdoYskwRZ3CH-PI
+
+
+
+###
+PUT http://localhost:3000/api/products/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXYiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MjExNTY3NDl9.fUxu8CP_fg2Zc0Z50oDHIw0CKLcmTdoYskwRZ3CH-PI
+Content-Type: application/json
+
+{
+    "title":"s",
+    "description":"s",
+    "inventory_count":969
+}
+
+
+###
+
+DELETE http://localhost:3000/api/products/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXYiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MjExNTY3NDl9.fUxu8CP_fg2Zc0Z50oDHIw0CKLcmTdoYskwRZ3CH-PI
+Content-Type: application/json
